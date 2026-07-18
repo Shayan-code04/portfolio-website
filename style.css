@@ -38,10 +38,9 @@ header{
 
     text-align:center;
 
-    padding:30px;
+    padding:25px;
 
 }
-
 
 /* Element Selector */
 
@@ -56,7 +55,7 @@ h1{
 
 header p{
 
-    margin-bottom:20px;
+    margin-bottom:10px;
 
 }
 
@@ -71,7 +70,7 @@ nav{
 
     justify-content:center;
 
-    gap:30px;
+    gap:10px;
 
 }
 
@@ -187,6 +186,172 @@ li{
     border-radius:10px;
 
     text-align:center;
+
+}
+/* ===========================
+   CSS VARIABLES
+=========================== */
+
+:root{
+    --primary:#2563eb;
+    --background:#f4f4f4;
+    --card:#ffffff;
+    --text:#333333;
+    --radius:12px;
+}
+
+/* ===========================
+   PROJECT SECTION
+=========================== */
+
+#projects{
+    padding:60px 20px;
+    background:var(--background);
+}
+
+#projects h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:var(--primary);
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.projects-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+}
+
+/* ===========================
+   PROJECT CARD
+=========================== */
+
+.project-card{
+
+    background:var(--card);
+
+    padding:25px;
+
+    border-radius:var(--radius);
+
+    box-shadow:0 5px 12px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 20px rgba(0,0,0,0.2);
+
+}
+
+/* ===========================
+   TEXT
+=========================== */
+
+.project-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:10px;
+
+}
+
+.project-card p{
+
+    margin-bottom:15px;
+
+    color:var(--text);
+
+}
+
+/* ===========================
+   DETAILS
+=========================== */
+
+details{
+
+    margin-top:10px;
+
+}
+
+summary{
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    color:var(--primary);
+
+}
+
+details ul{
+
+    margin-top:10px;
+
+    padding-left:20px;
+
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media(max-width:868px){
+
+.projects-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:880px){
+
+#projects{
+
+padding:30px 10px;
+
+}
+
+#projects h2{
+
+font-size:28px;
+
+}
+
+.project-card{
+
+padding:15px;
+
+}
+
+.project-card h3{
+
+font-size:20px;
+
+}
+
+.project-card p{
+
+font-size:14px;
+
+}
 
 }
 
