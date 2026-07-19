@@ -25,7 +25,6 @@ body{
 
 }
 
-
 /* ===========================
         HEADER
 =========================== */
@@ -383,4 +382,28 @@ footer{
 
     padding:20px;
 
+}
+
+/*dark mode button */
+body {
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+.dark-mode {
+    background-color: #393636;
+    color: rgb(247, 246, 246);
+}
+
+#theme-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    color:#333333;
+    cursor: pointer;
+}
+html {
+    scroll-behavior: smooth;
 }
