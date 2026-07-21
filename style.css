@@ -192,7 +192,7 @@ li{
 =========================== */
 
 :root{
-    --primary:#2563eb;
+    --primary:#2456e9;
     --background:#f4f4f4;
     --card:#ffffff;
     --text:#333333;
@@ -414,4 +414,60 @@ html {
 }
 @keyframes blink {
   50% { opacity: 0; }
+}
+footer a {
+    color: rgb(188, 230, 220);      /* Change to any color you want */
+    text-decoration: none; /* Removes underline */
+}
+footer a:hover {
+    color: #00bfff;    /* Light blue when mouse hovers */
+}
+.github-btn {
+    display: inline-block;
+    padding: 1px 6px;
+    background-color: #24292e;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 300;
+    transition: background-color 0.3s ease;
+}
+
+.github-btn:hover {
+    background-color: #7a7f85;
+}
+
+/*contact me button*/
+#contact{
+    text-align:center;
+    padding:8px 6px;
+}
+
+#contact p{
+    margin:15px 0;
+    color:#666;
+}
+
+.contact-links{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.contact-btn{
+    text-decoration:none;
+    background:#24292f;
+    color:white;
+
+    padding:10px 18px;
+
+    border-radius:8px;
+
+    transition:0.3s;
+}
+
+.contact-btn:hover{
+    background:#3b434d;
+    transform:translateY(-3px);
 }
