@@ -27,3 +27,56 @@ function erase() {
 
 type();
 
+async function loadGitHubStats() {
+    try {
+        const response = await fetch("https://api.github.com/users/Shayan-code04");
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch GitHub data");
+        }
+
+        const data = await response.json();
+
+        console.log(data);
+
+        document.getElementById("github-name").textContent = data.name;
+        document.getElementById("github-followers").textContent = data.followers;
+        document.getElementById("github-repos").textContent = data.public_repos;
+        document.getElementById("github-avatar").src = data.avatar_url;
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+loadGitHubStats();
+async function loadBitcoinPrice() {
+    try {
+        const response = await fetch(
+            "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+        );
+
+        if (!response.ok) {
+            throw new Error("Failed to fetch Bitcoin price");
+        }
+
+        const data = await response.json();
+
+        console.log(data);
+
+        document.getElementById("btc-price").textContent =
+            "$" + data.bitcoin.usd;
+
+        document.getElementById("btc-updated").textContent =
+            new Date().toLocaleTimeString();
+
+    } catch (error) {
+        console.error(error);
+
+        document.getElementById("btc-price").textContent =
+            "Unable to load price";
+    }
+}
+
+loadBitcoinPrice();
+setInterval(loadBitcoinPrice, 60000);
