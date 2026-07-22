@@ -7,15 +7,6 @@ Welcome to my personal portfolio website! This portfolio showcases my skills, pr
 🔗 **Portfolio:**  
 https://shayan-code04.github.io/portfolio-website/
 
----
-
-## 📸 Preview
-
-> *(Add a screenshot of your homepage here later.)*
-
-```markdown
-![Portfolio Preview](images/portfolio-preview.png)
-```
 
 ---
 
