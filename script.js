@@ -1,4 +1,3 @@
-
 const phrases = ["Python", "FastAPI", "React", "AI"];
 const el = document.getElementById("typing-text");
 let phraseIndex = 0;
