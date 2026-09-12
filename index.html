@@ -1,219 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Shayan's Portfolio</title>
+    <title>Shree Shayan GR — Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
     <link rel="icon" type="image/x-icon" href="favicon.ico/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
-  <link rel="apple-touch-icon" href="favicon.ico/apple-touch-icon.png">
-  <link rel="manifest" href="favicon.ico/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.ico/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="favicon.ico/apple-touch-icon.png">
+    <link rel="manifest" href="favicon.ico/site.webmanifest">
 </head>
 <body>
-    <header>
-        
-         <h1>Shree Shayan GR</h1>
-         <p>Second year B.Tech student | Aspiring Software Engineer</p>
-         
-         <h2>I'm building with <span id="typing-text"></span></h2>
-         <nav>
-            <a href="#about">About</a>|
-            <a href="#skills">Skills</a>|
-            <a href="#education">Education</a>|
-            <a href="#projects">Projects</a>|
-            <a href="#contact">Contact Me</a>
-           
-         </nav>
-         <hr>
-       
 
+    <nav class="topnav">
+        <a href="#top" class="topnav-brand">Shayan<span>.</span></a>
+        <div class="topnav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#leadership">Leadership</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <header id="top" class="hero">
+        <p class="hero-eyebrow">Bengaluru, India</p>
+        <h1>Shree Shayan GR</h1>
+        <p class="hero-role">B.Tech CSE (AI Specialization) — Jain University · building with <span id="typing-text"></span></p>
+
+        <div class="hero-buttons">
+            <a href="assets/resume.pdf" target="_blank" class="btn btn-solid"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+        </div>
     </header>
+
     <main>
-        <section id="about">
-            <h2> About Me </h2>
 
-            <img src="" alt="" width="200">
-            <p>
-               I'm a second-year B.Tech student.
-
-             passionate about software engineering.<br>
-
-                Currently learning Python,<br>
-                Git,<br>
-                GitHub,<br>
-                Data Structures,<br>
-                Algorithms,<br>
-                and Web Development.<br>
-            </p>
+        <section id="about" class="section">
+            <h2>About</h2>
+            <div class="about-grid">
+                <p class="about-text">
+                    I'm a second-year Computer Science &amp; Engineering student specializing in AI at Jain
+                    (Deemed-to-be University), Bengaluru. Most of what I build right now lives at the
+                    intersection of backend systems and AI-agent tooling — APIs, databases, and the
+                    infrastructure that lets software act on its own. Outside of code, I run a small
+                    court-sports event company, which has taught me as much about shipping under a
+                    deadline as any class has.
+                </p>
+                <dl class="about-facts">
+                    <div>
+                        <dt>Focus</dt>
+                        <dd>Backend engineering, AI agents, cloud</dd>
+                    </div>
+                    <div>
+                        <dt>Currently building</dt>
+                        <dd>A JWT-secured job application tracker API</dd>
+                    </div>
+                    <div>
+                        <dt>Graduating</dt>
+                        <dd>2029</dd>
+                    </div>
+                </dl>
+            </div>
         </section>
-        <hr>
-        <section id="skills">
-            <h2> Skills </h2>
-            <h3>Technical skills</h3>
-            <ul>[Python]
-                [Git]
-                [GitHub]
-                [HTML]
-                [Problem Solving]
-            </ul>
-             <h3> Learning</h3>
-            <ol>
-                -HTML<br>
-                -CSS<br>
-                -JavaScript<br>
-                -React</li><br>
-                -Backend Development<br>
-            </ol>
-             </section>
 
-        <hr>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
 
-        <section id="education">
+            <div class="skill-group">
+                <h3>Languages</h3>
+                <div class="pill-row">
+                    <span class="pill">Python</span>
+                    <span class="pill">SQL</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Backend &amp; data</h3>
+                <div class="pill-row">
+                    <span class="pill">FastAPI</span>
+                    <span class="pill">PostgreSQL</span>
+                    <span class="pill">psycopg2</span>
+                    <span class="pill">REST APIs</span>
+                    <span class="pill">Pydantic</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Tools</h3>
+                <div class="pill-row">
+                    <span class="pill">Git</span>
+                    <span class="pill">GitHub</span>
+                    <span class="pill">VS Code</span>
+                    <span class="pill">Thunder Client</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Core CS</h3>
+                <div class="pill-row">
+                    <span class="pill">Data Structures</span>
+                    <span class="pill">Algorithms</span>
+                    <span class="pill">LeetCode practice</span>
+                </div>
+            </div>
+
+            <div class="skill-group">
+                <h3>Currently learning</h3>
+                <div class="pill-row">
+                    <span class="pill pill-muted">React</span>
+                    <span class="pill pill-muted">Docker</span>
+                    <span class="pill pill-muted">Gemini API</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
             <h2>Education</h2>
-
-            <article>
-                <h3>Bachelor of Technology (B.Tech)</h3>
-
-                <p>
-                    second Year Engineering Student
-                </p>
-
-                <p>
-                    Interested in Software Engineering, Artificial Intelligence,
-                    and Cloud Computing.<br>Expected Graduation
-                    2029
-                </p>
-            </article>
+            <div class="edu-card">
+                <div class="edu-mark"></div>
+                <div>
+                    <h3>B.Tech, Computer Science &amp; Engineering — AI Specialization</h3>
+                    <p class="edu-school">Jain (Deemed-to-be University), Bengaluru</p>
+                    <p class="edu-detail">Expected graduation 2029 · focused on software engineering, artificial intelligence, and cloud computing.</p>
+                </div>
+            </div>
         </section>
 
-        <hr>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
 
-         <section id="projects">
-    <h2>Projects</h2>
+            <article class="project-featured">
+                <div class="project-featured-text">
+                    <p class="project-kicker">Razorpay AI Buildathon 2026 · Track 1</p>
+                    <h3>Agentic SAGA Orchestrator</h3>
+                    <p>
+                        A distributed payment orchestrator that applies the SAGA pattern to chained
+                        AI-agent commerce — coordinating three sequential vendor transactions (data, compute,
+                        delivery) through Razorpay's authorize–capture–refund lifecycle, with automatic
+                        reverse-order compensation on failure. Each vendor leg is authenticated independently
+                        using ECDSA signing and HMAC-SHA256.
+                    </p>
+                    <div class="pill-row">
+                        <span class="pill pill-mono">Python</span>
+                        <span class="pill pill-mono">FastAPI</span>
+                        <span class="pill pill-mono">Razorpay SDK</span>
+                        <span class="pill pill-mono">ECDSA</span>
+                        <span class="pill pill-mono">HMAC-SHA256</span>
+                    </div>
+                    <a href="https://github.com/Shayan-code04" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-small">
+                        <i class="fa-brands fa-github"></i> View on GitHub
+                    </a>
+                </div>
+            </article>
 
-    <div class="projects-container">
+            <div class="projects-grid">
 
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>A responsive portfolio showcasing my skills, projects, and learning journey using HTML, CSS, and JavaScript.</p>
-              HTML • CSS • JavaScript<br>
-            <a href="https://github.com/Shayan-code04/portfolio-website"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="github-btn">
-             <i class="fa-brands fa-github"></i> GitHub
-             </a>
-        </div>      
-            
-    
+                <article class="project-card">
+                    <h3>Job Application Tracker API</h3>
+                    <p class="project-status">In development</p>
+                    <p>Secured REST API for tracking job applications — full CRUD, JWT-based auth, and status analytics. Target: PostgreSQL + FastAPI, deployed on Render.</p>
+                    <div class="pill-row">
+                        <span class="pill pill-mono">FastAPI</span>
+                        <span class="pill pill-mono">PostgreSQL</span>
+                        <span class="pill pill-mono">JWT</span>
+                    </div>
+                    <a href="https://github.com/Shayan-code04/fastapi-practice" target="_blank" rel="noopener noreferrer" class="card-link">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </article>
 
-        
+                <article class="project-card">
+                    <h3>Contact Book CLI</h3>
+                    <p>Command-line contact manager built with a single OOP data model and JSON persistence across sessions. Exception-safe file handling keeps malformed input from crashing the app.</p>
+                    <div class="pill-row">
+                        <span class="pill pill-mono">Python</span>
+                        <span class="pill pill-mono">OOP</span>
+                        <span class="pill pill-mono">JSON</span>
+                    </div>
+                    <a href="https://github.com/Shayan-code04/contact-book-cli" target="_blank" rel="noopener noreferrer" class="card-link">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </article>
 
-        <div class="project-card">
-            <h3>Contact Book</h3>
-            <p>A command-line application to store ,search, edit and delete contacts..</p><br>
-            
-             Python • File Handling<br>
+                <article class="project-card">
+                    <h3>PostgreSQL Query Practice</h3>
+                    <p>A multi-table schema (students, courses) covering seven core query patterns — SELECT, WHERE, ORDER BY, LIKE, BETWEEN, LIMIT/OFFSET, and JOIN.</p>
+                    <div class="pill-row">
+                        <span class="pill pill-mono">PostgreSQL</span>
+                        <span class="pill pill-mono">SQL</span>
+                    </div>
+                    <a href="https://github.com/Shayan-code04/postgresql-practice" target="_blank" rel="noopener noreferrer" class="card-link">
+                        <i class="fa-brands fa-github"></i> GitHub
+                    </a>
+                </article>
 
-           <a href="https://github.com/Shayan-code04/contact-book-cli"
-             target="_blank"
-             rel="noopener noreferrer"
-             class="github-btn">
-             <i class="fa-brands fa-github"></i> GitHub
-             </a>
-         
-             
-        </div>
+                <article class="project-card project-card-muted">
+                    <h3>DSA Solutions</h3>
+                    <p class="project-status">Coming soon</p>
+                    <p>Uploading my LeetCode and DSA solutions as I work through them.</p>
+                </article>
 
-        <div class="project-card">
-            <h3>DSA Solutions</h3>
-           
-            Uploading my LeetCode and DSA solutions.
-        
-            <br>
-            Coming Soon..
-        </div>
+            </div>
+        </section>
 
-    </div>
-</section>
-    <hr>
-<section id="github-stats">
-    <h2>GitHub Stats</h2>
-
-    <p><strong>Name:</strong> <span id="github-name">Loading...</span></p>
-
-    <p><strong>Followers:</strong> <span id="github-followers">Loading...</span></p>
-
-    <p><strong>Public Repositories:</strong> <span id="github-repos">Loading...</span></p>
-
-    <img id="github-avatar" width="50" alt="GitHub Profile Picture">
-</section>
-<section id="bitcoin-price">
-    <h2>Live Bitcoin Price</h2>
-
-    <p>
-        Current Price (USD):
-        <span id="btc-price">Loading...</span>
-    </p>
-
-    <p>
-        Last Updated:
-        <span id="btc-updated">Loading...</span>
-    </p>
-</section>
-<section id="contact">
-    <h2>Contact Me</h2>
-
-    <p>I'm always open to learning opportunities, internships, and collaborations.</p>
-
-    <div class="contact-links">
-
-        <a href="mailto:shreeshayanr@gmail.com" class="contact-btn">
-            <i class="fa-solid fa-envelope"></i>
-            Email
-        </a>
-
-        <a href="https://github.com/Shayan-code04"
-           target="_blank"
-           class="contact-btn">
-            <i class="fa-brands fa-github"></i> GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN/"
-           target="_blank"
-           class="contact-btn">
-            <i class="fa-brands fa-linkedin"></i> LinkedIn
-        </a>
-
-    </div>
-
-</section>
+        <section id="leadership" class="section">
+            <h2>Leadership &amp; entrepreneurship</h2>
+            <div class="edu-card edu-card-accent">
+                <div class="edu-mark edu-mark-accent"></div>
+                <div>
+                    <h3>Podium Events — Founder &amp; Event Operations Lead</h3>
+                    <p class="edu-detail">
+                        Founded and run a court-sports event management company specializing in badminton,
+                        table tennis, squash, and pickleball tournaments and corporate events. Designed
+                        two-tier service packaging and a branded client proposal, and own end-to-end
+                        operations — client acquisition, logistics, vendor coordination, and on-ground execution.
+                    </p>
+                </div>
+            </div>
+        </section>
 
     </main>
-    <hr>
+
+    <section id="contact" class="contact">
+        <h2>Get in touch</h2>
+        <p>Open to learning opportunities, internships, and collaborations.</p>
+        <p class="contact-phone"><i class="fa-solid fa-phone"></i> +91 95387 92277</p>
+
+        <div class="contact-links">
+            <a href="mailto:shreeshayanr@gmail.com" class="btn btn-outline btn-light">
+                <i class="fa-solid fa-envelope"></i> Email
+            </a>
+            <a href="https://github.com/Shayan-code04" target="_blank" class="btn btn-outline btn-light">
+                <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/shree-shayan-a08965219/" target="_blank" class="btn btn-outline btn-light">
+                <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="assets/resume.pdf" target="_blank" class="btn btn-outline btn-light">
+                <i class="fa-solid fa-file-arrow-down"></i> Resume
+            </a>
+        </div>
+    </section>
+
     <footer>
-         <p>&copy; 2026 Shree Shayan GR. All Rights Reserved.</p>
-
-        
-            
-            
-
-
-
+        <p>&copy; 2026 Shree Shayan GR. All rights reserved.</p>
     </footer>
- 
 
-
-
-<script src="script.js"></script>
-
-
-
-
-
+    <script src="script.js"></script>
 </body>
 </html>
